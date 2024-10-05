@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&display=swap'); /* Futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap'); /* Strong secondary font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* No horizontal scrolling */
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #0e0b16;
+    color: white;
+    scroll-behavior: smooth;
+}
+/* Full-screen landing section */
+.landing {
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw;  /* Full width of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('your-image.jpg') no-repeat center center/cover; /* Background image */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure the hero content is centered */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.5rem;
+    color: #ff4e50;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    animation: glow 2s infinite alternate;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #ffffffb3;
+    margin-bottom: 40px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Button for call to action */
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background: #ff4e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(255, 78, 80, 0.5);
+}
+
+.cta-button:hover {
+    background: #e73c3f;
+    transform: scale(1.05);
+}
+
+/* Ensure no horizontal scrolling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* No horizontal scroll */
+}
+
+/* Make sure this applies to the whole page and works on all devices */
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1.2rem;
+    }
+}
+
+.landing {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url('523432-detailed-fantasy.jpg') no-repeat center center/cover; /* Background image */
+}
+
+/* Header with navigation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo Style */
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #ff4e50;
+    text-transform: uppercase;
+}
+
+/* Navigation Menu */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #ff4e50;
+}
+
+/* Main content in the center */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.hero-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #ff4e50;
+    letter-spacing: 0.2rem;
+    animation: glow 2s infinite alternate;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #ffffffb3;
+    margin-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Call to Action button */
+.cta-button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background: #ff4e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(255, 78, 80, 0.5);
+}
+
+.cta-button:hover {
+    background: #e73c3f;
+    transform: scale(1.05);
+}
+
+/* Glowing animation for the title */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 78, 80, 0.5), 0 0 20px rgba(255, 78, 80, 0.4);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 78, 80, 0.7), 0 0 40px rgba(255, 78, 80, 0.5);
+    }
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1.2rem;
+    }
+}
+/* Basic styles for the hamburger icon */
+.navbar-12{
+    text-shadow: 0 0 20px rgba(255, 78, 80, 0.7), 0 0 40px rgba(255, 78, 80, 0.5);
+}
+.members-section {
+    padding: 50px 0;
+    background: url('HD-wallpaper-black-abstract.jpg') no-repeat center center/cover; /* Background image */
+    position: relative;
+    color: white; /* Text color for contrast */
+}
+
+.members-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+#section-title {
+    font-size: 2.5rem;
+    color: #ff4e50;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2; /* Ensure title is above the overlay */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent card background */
+    border: none;
+    border-radius: 15px; /* Rounded corners for cards */
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2; /* Ensure cards are above the overlay */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.card-img-top {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    border-radius: 50%; /* Make images round */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center image */
+}
+
+.card-body {
+    text-align: center; /* Center text */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Adjust title size */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.card-text {
+    font-size: 1rem; /* Adjust text size */
+}
+.scroll-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff4e50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Make sure it's above other content */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+.scroll-button:hover {
+    background-color: #e73c3f; /* Darker shade on hover */
+}
+.history-section {
+    padding: 80px 0; /* Increased padding for better spacing */
+    background-color: #1c1b2d; /* Dark background */
+    color: white; /* White text for contrast */
+    overflow: hidden; /* Prevent cutting off elements */
+}
+
+.section-title {
+    font-size: 3rem; /* Larger title */
+    color: #ff4e50;
+    margin-bottom: 50px; /* Increased margin for separation */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px; /* Increased max-width */
+    margin: 0 auto; /* Center the timeline */
+}
+
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    margin-bottom: 60px; /* Increased margin for spacing */
+    transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 20px;
+    left: -40px; /* Adjusted for better positioning */
+    width: 50px;
+    height: 50px;
+    background-color: #ff4e50; /* Icon background */
+    border-radius: 50%; /* Circular icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px; /* Larger icon */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-content h3 {
+    font-size: 1.8rem; /* Adjusted heading size */
+    margin-bottom: 10px; /* Spacing below heading */
+}
+
+.timeline-content p {
+    font-size: 1.1rem; /* Adjusted text size */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+.memorable-moments {
+    padding: 60px 20px;
+    background-color: #f0f4f8; /* Light background */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ff4e50;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.memorable-moments{
+   background-color:  rgba(255, 255, 255, 0.1); 
+   x
+}
+/* Moment 1 - Full-width image with text overlay */
+.moment-one {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.moment-one img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.moment-one .moment-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
